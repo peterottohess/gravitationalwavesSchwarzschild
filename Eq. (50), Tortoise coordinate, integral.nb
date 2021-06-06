@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6040,        179]
+NotebookOptionsPosition[      4909,        151]
+NotebookOutlinePosition[      5339,        168]
+CellTagsIndexPosition[      5296,        165]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+%%% Integral of the Tortoise coordinate, %%% Eq. (47) of the manuscript, %%% \
+for pc - GR :\
+\>", "Text",
+ CellChangeTimes->{{3.810909171919598*^9, 3.8109091970544214`*^9}, {
+   3.8109092775813227`*^9, 3.810909331581212*^9}, 3.810909371861859*^9, 
+   3.8134274545787296`*^9},
+ FontColor->RGBColor[
+  0, 0, 1],ExpressionUUID->"42ff1401-a77a-48c9-81ec-cd8cb4d55d01"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", " ", 
+      RowBox[{"2", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"27", "/", 
+           RowBox[{"(", 
+            RowBox[{"32", " ", 
+             RowBox[{"x", "^", "3"}]}], ")"}]}]}], ")"}], "/", "x"}]}]}], 
+     ")"}]}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.798391877643876*^9, 3.79839188868723*^9}, {
+  3.7983964054691515`*^9, 3.798396423009245*^9}, {3.7984121403186483`*^9, 
+  3.798412149550621*^9}, {3.798412217299184*^9, 3.7984122544937987`*^9}, {
+  3.798449865051046*^9, 3.798449886400408*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"1c32e20c-aa28-4673-a43a-d2586ec8f58b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox["3", "2"]}], "+", 
+  FractionBox["9", 
+   RowBox[{"12", "-", 
+    RowBox[{"8", " ", "x"}]}]], "+", "x", "-", 
+  FractionBox[
+   RowBox[{"ArcTan", "[", 
+    FractionBox[
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", "x"}]}], 
+     SqrtBox["2"]], "]"}], 
+   RowBox[{"4", " ", 
+    SqrtBox["2"]}]], "+", 
+  RowBox[{"2", " ", 
+   RowBox[{"Log", "[", 
+    RowBox[{
+     RowBox[{"-", "3"}], "+", 
+     RowBox[{"2", " ", "x"}]}], "]"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.7984122695838213`*^9, {3.7984498683473268`*^9, 3.7984498875561156`*^9}},
+ CellLabel->"Out[3]=",ExpressionUUID->"70d2553d-3654-4cb3-bee2-fd25dc062562"]
+}, Open  ]],
+
+Cell["\<\
+%%% Integral of the Tortoise coordinate, %%% Eq. (47) of the manuscript, %%% \
+for GR :\
+\>", "Text",
+ CellChangeTimes->{{3.810909320939995*^9, 3.8109093265193844`*^9}, 
+   3.810909376554761*^9, 3.8134274806720147`*^9},
+ FontColor->RGBColor[
+  0, 0, 1],ExpressionUUID->"460008d0-a702-4b4d-85a6-7fb315a8262b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", " ", 
+      RowBox[{"2", "/", "x"}]}], ")"}]}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.798391877643876*^9, 3.79839188868723*^9}, {
+  3.7983964054691515`*^9, 3.798396423009245*^9}, {3.7984121403186483`*^9, 
+  3.798412149550621*^9}, {3.798412217299184*^9, 3.7984122544937987`*^9}, {
+  3.798449865051046*^9, 3.798449886400408*^9}, {3.7984630910087957`*^9, 
+  3.798463094945447*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"170085b5-557f-4d54-9cba-0d6b84714340"],
+
+Cell[BoxData[
+ RowBox[{"x", "+", 
+  RowBox[{"2", " ", 
+   RowBox[{"Log", "[", 
+    RowBox[{
+     RowBox[{"-", "2"}], "+", "x"}], "]"}]}]}]], "Output",
+ CellChangeTimes->{3.798463096835474*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"f97d90be-9279-4d79-bdf6-6e2f5fc62060"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", " ", 
+      RowBox[{"2", "/", "x"}], "+", " ", 
+      RowBox[{"la", " ", 
+       RowBox[{"x", "^", "3"}]}]}], ")"}]}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.798391877643876*^9, 3.79839188868723*^9}, {
+  3.7983964054691515`*^9, 3.798396423009245*^9}, {3.7984121403186483`*^9, 
+  3.798412149550621*^9}, {3.798412217299184*^9, 3.7984122544937987`*^9}, {
+  3.798449865051046*^9, 3.798449886400408*^9}, {3.8066676148841434`*^9, 
+  3.806667652243662*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"a53b9f18-4270-4536-95d6-3ae2bda723a4"],
+
+Cell[BoxData[
+ RowBox[{"RootSum", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], "+", "#1", "+", 
+     RowBox[{"la", " ", 
+      SuperscriptBox["#1", "4"]}]}], "&"}], ",", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"Log", "[", 
+       RowBox[{"x", "-", "#1"}], "]"}], " ", "#1"}], 
+     RowBox[{"1", "+", 
+      RowBox[{"4", " ", "la", " ", 
+       SuperscriptBox["#1", "3"]}]}]], "&"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.8066676454978433`*^9, 3.8066676539434967`*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"ffa66bdd-1702-47eb-b214-418a61479fa0"]
+}, Open  ]]
+},
+WindowSize->{627, 612},
+WindowMargins->{{Automatic, 94}, {11, Automatic}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"12.1 para Microsoft Windows (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"bc9da1c4-39e6-4e4a-a9e8-cead3c34c5dc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 375, 8, 73, "Text",ExpressionUUID->"42ff1401-a77a-48c9-81ec-cd8cb4d55d01"],
+Cell[CellGroupData[{
+Cell[958, 32, 754, 19, 57, "Input",ExpressionUUID->"1c32e20c-aa28-4673-a43a-d2586ec8f58b"],
+Cell[1715, 53, 676, 22, 82, "Output",ExpressionUUID->"70d2553d-3654-4cb3-bee2-fd25dc062562"]
+}, Open  ]],
+Cell[2406, 78, 318, 7, 73, "Text",ExpressionUUID->"460008d0-a702-4b4d-85a6-7fb315a8262b"],
+Cell[CellGroupData[{
+Cell[2749, 89, 585, 12, 57, "Input",ExpressionUUID->"170085b5-557f-4d54-9cba-0d6b84714340"],
+Cell[3337, 103, 270, 7, 43, "Output",ExpressionUUID->"f97d90be-9279-4d79-bdf6-6e2f5fc62060"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3644, 115, 656, 14, 57, "Input",ExpressionUUID->"a53b9f18-4270-4536-95d6-3ae2bda723a4"],
+Cell[4303, 131, 590, 17, 63, "Output",ExpressionUUID->"ffa66bdd-1702-47eb-b214-418a61479fa0"]
+}, Open  ]]
+}
+]
+*)
+
